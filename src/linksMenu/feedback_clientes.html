@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback de Clientes</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="feedback_clientes.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback de Clientes</h1>
+        <p>Aqui você pode ver os comentários e opiniões dos nossos clientes.</p>
+    </header>
+
+    <section class="content">
+        <!-- Exibição de feedbacks -->
+        <div class="feedback-list">
+            <h2>Comentários Recentes</h2>
+
+            <div class="feedback-item">
+                <h3>João Silva</h3>
+                <p class="feedback-text">"O sistema é muito fácil de usar, a interface é intuitiva e as funcionalidades são ótimas. Recomendo!"</p>
+                <p class="feedback-date">Recebido em: 05/02/2025</p>
+            </div>
+
+            <div class="feedback-item">
+                <h3>Maria Oliveira</h3>
+                <p class="feedback-text">"Excelente atendimento e suporte. O produto superou minhas expectativas, e o suporte foi muito rápido!"</p>
+                <p class="feedback-date">Recebido em: 04/02/2025</p>
+            </div>
+
+            <div class="feedback-item">
+                <h3>Carlos Souza</h3>
+                <p class="feedback-text">"Fiquei um pouco confuso no começo, mas depois de entender as funcionalidades, o sistema se tornou muito útil."</p>
+                <p class="feedback-date">Recebido em: 03/02/2025</p>
+            </div>
+        </div>
+
+        <!-- Formulário para enviar feedback -->
+        <div class="feedback-form">
+            <h2>Deixe seu Feedback</h2>
+            <form>
+                <label for="name">Seu Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="feedback">Seu Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>

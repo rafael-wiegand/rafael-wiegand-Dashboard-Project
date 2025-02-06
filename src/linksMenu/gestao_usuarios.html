@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Usuários</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="gestao_usuarios.css"> 
+</head>
+<body>
+    <header>
+        <h1>Gestão de Usuários</h1>
+        <p>Administre os usuários do sistema: adicione, edite ou remova usuários conforme necessário.</p>
+    </header>
+
+    <section class="content">
+        <div class="user-list">
+            <h2>Lista de Usuários</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>João Silva</td>
+                        <td>joao.silva@email.com</td>
+                        <td><button class="edit-btn">Editar</button> <button class="delete-btn">Excluir</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maria Oliveira</td>
+                        <td>maria.oliveira@email.com</td>
+                        <td><button class="edit-btn">Editar</button> <button class="delete-btn">Excluir</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Carlos Pereira</td>
+                        <td>carlos.pereira@email.com</td>
+                        <td><button class="edit-btn">Editar</button> <button class="delete-btn">Excluir</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="add-user">
+            <h2>Adicionar Novo Usuário</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Adicionar Usuário</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>
